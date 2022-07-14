@@ -13,6 +13,7 @@ git commit -m  "COMMIT-1"
 git push origin ${new_branch_name}
 gh pr create -B 'main' -t "${new_branch_name}" 
 
+sleep 10
 cp ./recursive/other_file.txt ./recursive/other_file2.txt
 git add ./recursive/other_file2.txt
 git commit -m  "COMMIT-2"
